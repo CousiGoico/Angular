@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TeacherComponent } from './teacher/teacher.component';
 import { StudentComponent } from './student/student.component';
 import { SubjectComponent } from './subject/subject.component';
+import { MyServiceService } from 'src/services/my-service.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { SubjectComponent } from './subject/subject.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MyServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
